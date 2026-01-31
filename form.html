@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pithar Form</title>
+    <style>
+       body{
+        background-color:ivory;
+       }
+       .basic-info label{
+        display:block;
+        margin-top: 5px;
+       }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>CoU পিঠা ঘর</h2>
+            <form>
+                <fieldset class="basic-info">
+                    <legend>ব্যক্তিগত তথ্য</legend>
+                    <label for="name">নাম:</label>
+                    <input type="text" name="" id="name">
+                    <label for="contract">মোবাইল নাম্বার:</label>
+                    <input type="text" name="" id="contract">
+                    <label for="add">বর্তমান ঠিকানা:</label>
+                    <input type="text" name="" id="add">
+                    <label for="email">ই-মেইল:</label>
+                    <input type="email" name="" id="email">
+                </fieldset>
+                <fieldset class="pitha">
+                    <legend>পিঠা ইনফো</legend>
+                    <input type="radio" name="pitha" id="vapa">
+                    <label for="vapa">ভাপা পিঠা</label>
+                    <input type="radio" name="pitha" id="chitoi">
+                    <label for="chitoi">চিতই পিঠা</label>  
+                    <input type="radio" name="pitha" id="both">
+                    <label for="both">দুইটায় খাবো</label>   
+                </fieldset>
+                <fieldset class="vorta">
+                    <legend>ভর্তা আইটেম</legend>
+                    <input type="checkbox" name="" id="shutki">
+                    <label for="shutki">শুটকি ভর্তা</label>
+                    <input type="checkbox" name="" id="doniya">
+                    <label for="doniya">ধনিয়া ভর্তা</label>
+                    <input type="checkbox" name="" id="sorisha">
+                    <label for="sorisha">সরিষা ভর্তা</label>
+                    <input type="checkbox" name="" id="begun">
+                    <label for="begun">বেগুন ভর্তা</label>
+                    <input type="checkbox" name="" id="badam">
+                    <label for="badam">বাদাম ভর্তা</label>
+                </fieldset>
+                <fieldset>
+                    <legend>আপনার কোন বিশেষ অর্ডার / মন্তব্য দিন</legend>
+                    <textarea cols="40" rows="4"></textarea>
+                </fieldset>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
