@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitha Ghar</title>
+    <style>
+        /* navbar */
+                nav ul{
+            display: flex;
+            justify-content: space-evenly;
+            background-color:#3a5a40;
+            /* padding-top: 10x; */
+            margin: 0;
+        }
+        nav li{
+            list-style: none;
+            margin: 20px 0 20px 0; 
+        }
+        nav li a{
+            text-decoration: none;
+            color: ivory;
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav li a:hover{
+            color:#ffb347;
+        }
+        /* hero section */
+        body{
+            /* max-width: 1270px; */
+            background-color: blanchedalmond;
+            margin:0;
+        }
+        main{
+             display: flex;
+            justify-content: center; 
+            margin-top: 80px;
+             /* align-items: center;
+            min-height: 100vh;  */
+        }
+        .hero-container{
+            display: flex;
+            background-color: 	#8cab81;
+            width: 1150px;
+            height: 300px;
+            justify-content: center;
+            gap: 30px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 8px grey;
+        }
+        .container-info{
+            font-size: 1.1em;
+            font-family: 'Times New Roman', Times, serif;
+            color:#22311d;
+            padding-left: 10px;
+        }
+        .container-info h3{
+            font-size: 1.75em;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(255, 215, 166);
+            font-weight: 700;
+        }
+        .hero-container img{
+            padding-top: 4px;
+            padding-right: 5px;
+            width:270px;
+            height: 97%;
+            border-radius: 20px;
+            
+        }
+        .hero-container button{
+            
+            height: 40px;
+            width: 80px;
+            margin: 20px 0 0 10px;
+            /* border:2px solid grey; */
+            border-radius: 10px;
+            color: #22311d;
+            background-color:blanchedalmond;
+            cursor: pointer;
+            font-size:medium;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-container button a{
+            text-decoration: none;
+            color:#22311d;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Song</a></li>
+            <li><a href="#">Table</a></li>
+            <li><a href="#">Flexbox</a></li>
+            <li><a href="#">Practice</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="hero-container">
+        <div class="container-info">
+            <h3>CoU Pitha Ghar</h3>
+            <p>
+                Bengali pitha is a traditional rice-based delicacy of Bengal, mostly enjoyed during winter festivals.<br>
+Popular varieties include Pati Shapta, Bhapa Pitha, and Chitoi Pitha, made with rice flour, coconut, and jaggery.
+Pitha represents the warmth, tradition, and cultural richness of Bengali cuisine.
+            </p>
+            <button ><a href="#">Explore</a></button>
+        </div>
+        <div>
+            <img src="/pitha2.png">
+        </div>
+    </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+    table {
+      width: 700px;
+      border-collapse:separate;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    th, td {
+      border: 2px solid #555;
+      padding: 10px;
+    }
+
+    /* Column colors via colgroup */
+    .student-col  { background: #d9d9d9; }
+    .subject-col { border: 2px dotted blue; }
+    .marks-col   { border: 2px dashed red; }
+    .grade-col    { background: #f3c7c7; }
+    .remarks-col  { background: #c8beb1; }
+
+    .title {
+      background: #bcdde6;
+      font-weight: bold;
+    }
+
+    .overall {
+      background: #d8f0f0;
+      font-weight: bold;
+    }
+    .subject-col, .marks-col {
+  border: 2px dashed #000;
+}
+
+    </style>
+  </head>
+  <body>
+    <thead>
+      <caption>
+        Complex Table Layout Demonstration
+      </caption>
+    </thead>
+    <tbody>
+      <table>
+    <colgroup>
+    <col class="student-col">
+    <col class="subject-col">
+    <col class="marks-col">
+    <col class="grade-col">
+    <col class="remarks-col">
+  </colgroup>
+        </colgroup>
+        <tr>
+          <th rowspan="2">Student</th>
+          <th colspan="3" class="title">Academic Details</th>
+          <th rowspan="2">Remarks</th>
+        </tr>
+        <tr>
+          <th>Subject</th>
+          <th>Marks</th>
+          <th>Grade</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Sarwar & 12309007</td>
+          <td>Mathematics</td>
+          <td>95</td>
+          <td>A+</td>
+          <td rowspan="2">Execellent</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>90</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Himel & 12309014</td>
+          <td>Accounting</td>
+          <td>88</td>
+          <td>B+</td>
+          <td rowspan="3">Good</td>
+        </tr>
+        <tr>
+          <td>Economics</td>
+          <td>85</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="overall">Overall Performance: Satisfactory</td>
+        </tr>
+      </table>
+    </tbody>
+  </body>
+</html>
